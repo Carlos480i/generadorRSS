@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<title>Generar Archivos RSS</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$("#activarMasInfo").click(function(){
+					$("#masinfo").toggle("slow");
+					$(this).text(function(i, v){
+					   return v === 'Más Info.' ? 'Menos Info.' : 'Más Info.'
+					})
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<h1>Generador de archivos RSS para 480interactive</h1><br>
+		<div id="form">
+			<form action="reader.php" method="post">
+				<hr />
+				<div class="campo">
+					<h1>URL Feed:</h1><br>
+						<input type="url" name="url" required>
+				</div>
+				<hr />
+				<div class="campo">
+					<h1>Botones para redimensionar el texto:</h1><br>
+						<input name='resize' type='checkbox' value='true' checked/><br>
+					<button id="activarMasInfo" type="button">Más Info.</button>
+				</div>
+				<div id="masinfo" style="display: none">
+					<p>Esta opción añade unos botones a tu articulo que permitirán al usuario aumentar o reducir el tamaño del texto, así como volver al feed de noticias.</p>
+					<img src="dispo.png" />
+				</div>
+				<hr />
+				<div class="campo">
+					<input type="submit" value="Generar Archivos RSS">
+				</div>
+			</form>
+		</div>	
+	</body>
+</html>

@@ -1,0 +1,76 @@
+body{
+	min-width: 900px;
+    background-color: #f2f2f2;
+	text-align: center;
+}
+
+hr{
+	width: 50%;
+}
+
+.campo{
+	margin: 2%;
+}
+
+input[type=url]{
+    width: 30%;
+    min-width: 500px;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+	font-size: 50%;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+	width: 30%;
+	min-width: 500px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+	font-size: 150%;
+}
+
+input[type=url]{
+	font-size: 150%;
+}
+
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+input[type=checkbox]
+{
+  /* Double-sized Checkboxes */
+  -ms-transform: scale(2); /* IE */
+  -moz-transform: scale(2); /* FF */
+  -webkit-transform: scale(2); /* Safari and Chrome */
+  -o-transform: scale(2); /* Opera */
+  padding: 10px;
+  margin: 20px;
+}
+
+#masinfo{
+	background-color: #D8D8D8;
+	width: 50%;
+	display:inline-block;
+}
+
+#activarMasInfo {
+	width: 10%;
+	min-width: 200px;
+    background-color: #58ACFA;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+	font-size: 100%;
+}
